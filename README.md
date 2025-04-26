@@ -28,6 +28,21 @@ This app fetches movies from **TMDB API**, tracks trending movies based on user 
 
 ---
 
+## 🌐 Important Note for Indian Users
+
+⚠️ In some cases, access to The Movie Database (TMDB) API may be **blocked** by certain Indian Internet Service Providers (ISPs) such as **Jio**.  
+This can cause the app to **fail to fetch movie data**, leading to missing information or errors.
+
+**Possible Solutions:**
+
+- Use a **VPN** to bypass the ISP block.
+- Switch to a different Internet Service Provider.
+- Configure and use **custom DNS servers**.
+
+> If you notice movie data not loading, we recommend turning on a VPN for the app to work properly.
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -64,7 +79,7 @@ EXPO_PUBLIC_APPWRITE_DATABASE_ID=
 EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
 ```
 
-> Replace the values with your actual credentials from TMDB and Appwrite.
+> Replace the placeholder values with your actual TMDB API key and Appwrite credentials.
 
 ### Running the Project
 
