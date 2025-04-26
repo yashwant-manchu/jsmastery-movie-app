@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# 📽️ Movie App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful and responsive mobile movie app built with **Expo**, **TypeScript**, **Tailwind CSS**, and **Appwrite**.  
+This app fetches movies from **TMDB API**, tracks trending movies based on user search behavior, and provides a real-world scalable and performant experience following modern UI/UX principles.
 
-## Get started
+---
 
-1. Install dependencies
+## ⚙️ Tech Stack
 
-   ```bash
-   npm install
-   ```
+- **Expo** (React Native Framework)
+- **React Native**
+- **Appwrite** (Backend for trending data logic)
+- **TypeScript**
+- **Tailwind CSS** (via NativeWind for styling)
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## 🔥 Features
 
-In the output, you'll find options to open the app in a
+- **Real-time Data:** Fetch and display real-time movie information from TMDB.
+- **Home Page:** Discover trending and featured movies.
+- **Search Functionality:** Search for any movie in real time.
+- **Popularity Algorithm:** Display trending movies based on engagement.
+- **Movie Details Page:** View detailed information about selected movies.
+- **Profile & Saved Screens:** Placeholder screens for future enhancements.
+- **Modern UI/UX:** Clean, responsive, and attractive design using Tailwind CSS.
+- **Code Reusability:** Well-structured, scalable, and modular architecture.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Quick Start
 
-## Get a fresh project
+### Prerequisites
 
-When you're ready, run:
+Ensure you have the following installed:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+
+### Cloning the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/yashwant-manchu/jsmastery-movie-app.git
+cd jsmastery-movie-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Installation
 
-## Learn more
+Install the dependencies:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Set Up Environment Variables
 
-## Join the community
+Create a `.env` file at the root of the project and add the following keys:
 
-Join our community of developers creating universal apps.
+```env
+EXPO_PUBLIC_MOVIE_API_KEY=
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> Replace the values with your actual credentials from TMDB and Appwrite.
+
+### Running the Project
+
+Start the Expo development server:
+
+```bash
+npx expo start
+```
+
+- Open the **Expo Go** app on your mobile device.
+- Scan the QR code displayed in the terminal or web browser.
+
+---
+
+## 📚 Credits
+
+- [JavaScript Mastery](https://www.jsmastery.pro/) for the amazing tutorial inspiration.
+- [TMDB](https://www.themoviedb.org/) for providing the movie data.
+- [Appwrite](https://appwrite.io/) for the backend services.
+
+---
+
+## 🛠️ Future Improvements
+
+- Implement authentication for user profiles.
+- Add movie saving/favorite functionality.
+- Enhance the profile and saved screens.
+- Push notifications for trending movies.
+- Offline access with caching.
